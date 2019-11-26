@@ -2,4 +2,4 @@
 - hosts: localhost
   tasks:
     - name: Retrieve secret from Conjur
-      shell: echo "Yay! {{username}}:{{password}} was just retrieved via Conjur"
+      shell: echo "Yay! {{ansible_ssh_user}}:{{ansible_ssh_pass}} was just retrieved via Conjur"
