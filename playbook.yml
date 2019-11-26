@@ -1,0 +1,5 @@
+
+- hosts: localhost
+  tasks:
+    - name: Retrieve secret from Conjur
+      shell: echo "Yay! {{username}}:{{password}} was just retrieved via Conjur"
