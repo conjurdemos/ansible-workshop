@@ -3,4 +3,4 @@
   tasks:
     - name: Retrieve secret from Conjur
       debug:
-        msg: "Yay! {{ansible_ssh_user}}:{{ansible_ssh_pass}} was just retrieved via Conjur"
+        msg: "Yay! {{ansible_user}}:{{ansible_ssh_pass}} was just retrieved via Conjur"
